@@ -4,14 +4,14 @@ I use **DDEV** to develop themes and plugins:
 
 1. Navigate to the WordPress core.
 2. Execute `ddev config` to configure a fresh development environment.
-3. Once configured, edit a new `.ddev/docker-compose.mounts.yaml` file and add the following block (using relative paths to map your monorepo clone):
+3. Once configured, edit a new `.ddev/docker-compose.mounts.yaml` file and add the following block (using relative or absolute paths to map your monorepo clone):
 
 ```yaml
 services:
   web:
     volumes:
       # Relative to the .ddev directory
-      - ../../my-wp/themes/sad:/var/www/html/wp-content/themes/sad
+      - /home/dylan/my-wp/themes/my-theme:/var/www/html/wp-content/themes/my-theme
 ```
 
 4. Now execute `ddev start` and each specified theme or plugin will be available in the WordPress admin dashboard.
