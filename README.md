@@ -4,7 +4,7 @@ I use **DDEV** to develop themes and plugins:
 
 1. Navigate to the WordPress core.
 2. Execute `ddev config` to configure a fresh development environment.
-3. Once configured, edit a new `.ddev/docker-compose.mounts.yaml` file and add the following block (using relative or absolute paths to map your monorepo clone):
+3. Once configured, edit a new `.ddev/docker-compose.mounts.yaml` file and [add the following block](https://stackoverflow.com/a/57432155) (using relative or absolute paths to map your monorepo clone):
 
 ```yaml
 services:
