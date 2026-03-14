@@ -16,7 +16,7 @@ The following two sections serve as an Index of the themes and plugins contained
 
 ## Environment Setup
 
-I use **DDEV** to develop themes and plugins:
+This procedure describes a workflow for rapidly iterating on WordPress themes and plugins with minimal setup, utilizing **DDEV** and custom Docker overrides to create an ephemeral development environment and mount remote directories for the WordPress core to reference inside a Docker container.
 
 1. Navigate to the WordPress core.
 2. Execute `ddev config` to configure a fresh development environment.
@@ -31,7 +31,3 @@ services:
 ```
 
 4. Now execute `ddev start` and each specified theme or plugin will be available in the WordPress admin dashboard.
-
-### Summary
-
-This procedure describes a workflow for rapidly iterating on WordPress themes and plugins with minimal setup, utilizing **DDEV** and custom Docker overrides to create an ephemeral development environment and mount remote directories for the WordPress core to reference inside a Docker container.
