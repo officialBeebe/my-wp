@@ -1,7 +1,56 @@
 /* Includes light/dark and high contrast material theme */
-@import url('style.root.css');
+/*@import url('style.md.css');*/
+@import url('style.palette.css');
 
+/* Site */
 body {
-    background: var(--md-sys-color-background);
-    color: var(--md-sys-color-primary)
+    background: var(--color-cblue-50);
+    color: var(--color-cblack-900);
 }
+
+a {
+    color: var(--color-cpink-600);
+}
+
+a:hover {
+    color: var(--color-cblue-600);
+}
+
+/* Header */
+.site-header {
+    display: flex;                   /* Use flexbox for layout */
+    justify-content: space-between;  /* Pushes logo to the left, nav to the right */
+    align-items: center;             /* Vertically centers items */
+    padding: 0 20px;
+    background: var(--color-cblue-400);
+}
+
+.site-title a {
+    margin: 0;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.main-navigation ul {
+    margin: 0;
+    padding: 0;
+    display: flex;    /* Use flexbox for list items */
+}
+
+
+.main-navigation li a {
+    padding: 10px 15px;
+    display: block;
+}
+
+.main-navigation li a:hover {
+    background: var(--color-cblue-800);
+}
+
+/* Page */
+.site-main {
+    padding: 0 2em;
+}
+
+/* Content */
