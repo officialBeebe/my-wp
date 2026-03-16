@@ -1,0 +1,134 @@
+/*:root {*/
+/*    --color-cblue: #A1B5D8; !* Powder Blue *!*/
+/*    --color-cblue-50: #F9FAFC;*/
+/*    --color-cblue-100: #E9EEF6;*/
+/*    --color-cblue-200: #CAD5E9;*/
+/*    --color-cblue-300: #ACBEDD;*/
+/*    --color-cblue-400: #93A6C6;*/
+/*    --color-cblue-500: #7C8CA7;*/
+/*    --color-cblue-600: #657288;*/
+/*    --color-cblue-700: #556072;*/
+/*    --color-cblue-800: #444D5C;*/
+/*    --color-cblue-900: #323843;*/
+
+/*    --color-cpink: #FFB2D0; !* Blush Pop *!*/
+/*    --color-cpink-50: #FFF8FB;*/
+/*    --color-cpink-100: #FFE8F1;*/
+/*    --color-cpink-200: #FFC5DB;*/
+/*    --color-cpink-300: #F1A8C4;*/
+/*    --color-cpink-400: #D293AB;*/
+/*    --color-cpink-500: #B17C91;*/
+/*    --color-cpink-600: #906576;*/
+/*    --color-cpink-700: #7A5563;*/
+/*    --color-cpink-800: #61444F;*/
+/*    --color-cpink-900: #48323B;*/
+
+/*    --color-cgreen: #D0EFB1; !* Tea Green *!*/
+/*    --color-cgreen-50: #F6FCF0;*/
+/*    --color-cgreen-100: #E0F4CB;*/
+/*    --color-cgreen-200: #C1DEA4;*/
+/*    --color-cgreen-300: #ABC592;*/
+/*    --color-cgreen-400: #96AC7F;*/
+/*    --color-cgreen-500: #7E916B;*/
+/*    --color-cgreen-600: #677657;*/
+/*    --color-cgreen-700: #56634A;*/
+/*    --color-cgreen-800: #45503B;*/
+/*    --color-cgreen-900: #333B2B;*/
+
+/*    --color-cred: #D72638; !* Classic Crimson *!*/
+/*    --color-cred-50: #FEF9F9;*/
+/*    --color-cred-100: #FBEAEB;*/
+/*    --color-cred-200: #F5CACE;*/
+/*    --color-cred-300: #EFABB2;*/
+/*    --color-cred-400: #E98993;*/
+/*    --color-cred-500: #E2616E;*/
+/*    --color-cred-600: #D8293B;*/
+/*    --color-cred-700: #B82130;*/
+/*    --color-cred-800: #951A27;*/
+/*    --color-cred-900: #6F141D;*/
+
+/*    --color-cblack: #2F323A; !* Jet Black *!*/
+/*    --color-cblack-50: #FAFAFA;*/
+/*    --color-cblack-100: #EDEEEE;*/
+/*    --color-cblack-200: #D4D5D6;*/
+/*    --color-cblack-300: #BCBDBF;*/
+/*    --color-cblack-400: #A3A5A8;*/
+/*    --color-cblack-500: #898B8F;*/
+/*    --color-cblack-600: #6F7176;*/
+/*    --color-cblack-700: #5D5F65;*/
+/*    --color-cblack-800: #4A4C53;*/
+/*    --color-cblack-900: #353840;*/
+/*}*/
+
+:root {
+    /* --- 1. SEED COLORS (The only values you ever need to change) --- */
+    --color-cblue-seed:  #A1B5D8; /* Powder Blue */
+    --color-cpink-seed:  #FFB2D0; /* Blush Pop */
+    --color-cgreen-seed: #D0EFB1; /* Tea Green */
+    --color-cred-seed:   #D72638; /* Classic Crimson */
+    --color-cblack-seed: #2F323A; /* Jet Black */
+
+    /* --- 2. MIX CONFIGURATION --- */
+    /* Using oklch provides perceptually uniform brightness steps */
+    --mix-svc: in oklch;
+
+    /* --- 3. BLUE SCALE --- */
+    --color-cblue-50:  color-mix(var(--mix-svc), var(--color-cblue-seed), white 96%);
+    --color-cblue-100: color-mix(var(--mix-svc), var(--color-cblue-seed), white 85%);
+    --color-cblue-200: color-mix(var(--mix-svc), var(--color-cblue-seed), white 65%);
+    --color-cblue-300: color-mix(var(--mix-svc), var(--color-cblue-seed), white 40%);
+    --color-cblue-400: color-mix(var(--mix-svc), var(--color-cblue-seed), white 20%);
+    --color-cblue-500: var(--color-cblue-seed);
+    --color-cblue-600: color-mix(var(--mix-svc), var(--color-cblue-seed), black 15%);
+    --color-cblue-700: color-mix(var(--mix-svc), var(--color-cblue-seed), black 30%);
+    --color-cblue-800: color-mix(var(--mix-svc), var(--color-cblue-seed), black 50%);
+    --color-cblue-900: color-mix(var(--mix-svc), var(--color-cblue-seed), black 70%);
+
+    /* --- 4. PINK SCALE --- */
+    --color-cpink-50:  color-mix(var(--mix-svc), var(--color-cpink-seed), white 96%);
+    --color-cpink-100: color-mix(var(--mix-svc), var(--color-cpink-seed), white 85%);
+    --color-cpink-200: color-mix(var(--mix-svc), var(--color-cpink-seed), white 65%);
+    --color-cpink-300: color-mix(var(--mix-svc), var(--color-cpink-seed), white 40%);
+    --color-cpink-400: color-mix(var(--mix-svc), var(--color-cpink-seed), white 20%);
+    --color-cpink-500: var(--color-cpink-seed);
+    --color-cpink-600: color-mix(var(--mix-svc), var(--color-cpink-seed), black 15%);
+    --color-cpink-700: color-mix(var(--mix-svc), var(--color-cpink-seed), black 30%);
+    --color-cpink-800: color-mix(var(--mix-svc), var(--color-cpink-seed), black 50%);
+    --color-cpink-900: color-mix(var(--mix-svc), var(--color-cpink-seed), black 70%);
+
+    /* --- 5. GREEN SCALE --- */
+    --color-cgreen-50:  color-mix(var(--mix-svc), var(--color-cgreen-seed), white 96%);
+    --color-cgreen-100: color-mix(var(--mix-svc), var(--color-cgreen-seed), white 85%);
+    --color-cgreen-200: color-mix(var(--mix-svc), var(--color-cgreen-seed), white 65%);
+    --color-cgreen-300: color-mix(var(--mix-svc), var(--color-cgreen-seed), white 40%);
+    --color-cgreen-400: color-mix(var(--mix-svc), var(--color-cgreen-seed), white 20%);
+    --color-cgreen-500: var(--color-cgreen-seed);
+    --color-cgreen-600: color-mix(var(--mix-svc), var(--color-cgreen-seed), black 15%);
+    --color-cgreen-700: color-mix(var(--mix-svc), var(--color-cgreen-seed), black 30%);
+    --color-cgreen-800: color-mix(var(--mix-svc), var(--color-cgreen-seed), black 50%);
+    --color-cgreen-900: color-mix(var(--mix-svc), var(--color-cgreen-seed), black 70%);
+
+    /* --- 6. RED SCALE --- */
+    --color-cred-50:  color-mix(var(--mix-svc), var(--color-cred-seed), white 96%);
+    --color-cred-100: color-mix(var(--mix-svc), var(--color-cred-seed), white 85%);
+    --color-cred-200: color-mix(var(--mix-svc), var(--color-cred-seed), white 65%);
+    --color-cred-300: color-mix(var(--mix-svc), var(--color-cred-seed), white 40%);
+    --color-cred-400: color-mix(var(--mix-svc), var(--color-cred-seed), white 20%);
+    --color-cred-500: var(--color-cred-seed);
+    --color-cred-600: color-mix(var(--mix-svc), var(--color-cred-seed), black 15%);
+    --color-cred-700: color-mix(var(--mix-svc), var(--color-cred-seed), black 30%);
+    --color-cred-800: color-mix(var(--mix-svc), var(--color-cred-seed), black 50%);
+    --color-cred-900: color-mix(var(--mix-svc), var(--color-cred-seed), black 70%);
+
+    /* --- 7. NEUTRAL (BLACK) SCALE --- */
+    --color-cblack-50:  color-mix(var(--mix-svc), var(--color-cblack-seed), white 96%);
+    --color-cblack-100: color-mix(var(--mix-svc), var(--color-cblack-seed), white 85%);
+    --color-cblack-200: color-mix(var(--mix-svc), var(--color-cblack-seed), white 65%);
+    --color-cblack-300: color-mix(var(--mix-svc), var(--color-cblack-seed), white 40%);
+    --color-cblack-400: color-mix(var(--mix-svc), var(--color-cblack-seed), white 20%);
+    --color-cblack-500: var(--color-cblack-seed);
+    --color-cblack-600: color-mix(var(--mix-svc), var(--color-cblack-seed), black 15%);
+    --color-cblack-700: color-mix(var(--mix-svc), var(--color-cblack-seed), black 30%);
+    --color-cblack-800: color-mix(var(--mix-svc), var(--color-cblack-seed), black 50%);
+    --color-cblack-900: color-mix(var(--mix-svc), var(--color-cblack-seed), black 70%);
+}
